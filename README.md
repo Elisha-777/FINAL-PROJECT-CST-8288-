@@ -88,7 +88,7 @@ Key classes include:
 
 ### Physical Model
 ![5](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/6a3b05cb-36b0-4360-9700-9e8e6b036f3b)
-```sql
+
 # Food Waste Reduction Platform (FWRP) - Database Structure
 
 The Food Waste Reduction Platform (FWRP) aims to minimize food waste by facilitating the efficient redistribution of surplus food items from retailers to consumers and charitable organizations. This document outlines the logical data model of FWRP, detailing the database's structural organization, including entities, attributes, and relationships critical to the system's data requirements.
