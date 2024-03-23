@@ -74,7 +74,7 @@ Key classes include:
 - **Charitable Organization:** Claims surplus food items for distribution.
 - **Consumer:** Purchases surplus food items.
 - **InventoryItem, ClaimedItem, PurchaseItem:** Represent various item states in the system.
-![Alt text](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/blob/master/3.png?raw=true "Optional title")
+![Alt text](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/blob/master/3.png?raw=true "Optional title" )
 
 ## 8. Database
 
