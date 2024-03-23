@@ -81,23 +81,22 @@ Key classes include:
 
 ## 8. Database
 
-### Logical Model
-
-- **Users Table:** Stores user information.
-- **Inventory Table:** Tracks food items, quantities, and expiration dates.
-
-### Physical Model
-![5](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/6a3b05cb-36b0-4360-9700-9e8e6b036f3b)
-
 # Food Waste Reduction Platform (FWRP) - Database Structure
 
-The Food Waste Reduction Platform (FWRP) aims to minimize food waste by facilitating the efficient redistribution of surplus food items from retailers to consumers and charitable organizations. This document outlines the logical data model of FWRP, detailing the database's structural organization, including entities, attributes, and relationships critical to the system's data requirements.
+This document outlines the logical data model and ERD (Entity-Relationship Diagram) for the Food Waste Reduction Platform (FWRP), detailing the database's structural organization. It includes entities, attributes, and relationships critical to the system's data requirements.
 
-## Entities and Attributes
+## ERD Diagram (Version 1.0)
+
+
+[![ERD Diagram](URL_to_ERD_image)](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/6a3b05cb-36b0-4360-9700-9e8e6b036f3b)
+
+## Logical Data Model
+
+### Entities and Attributes
 
 - **Users**
   - Represents individuals interacting with the platform.
-  - Attributes: user ID, name, email, password, user type (retailer, consumer, charitable organization).
+  - Attributes: user ID, name, email, password, user type (retailer, consumer, or charitable organization).
 
 - **Retailers**
   - Represents businesses or entities managing inventory.
@@ -126,7 +125,7 @@ The Food Waste Reduction Platform (FWRP) aims to minimize food waste by facilita
   - Represents user subscriptions for surplus food alerts.
   - Attributes: subscription ID, user ID, location, communication method, food preferences.
 
-## Relationships
+### Relationships
 
 1. **Users - Retailers, Consumers, Charitable Organizations**
    - One-to-many relationship between users and their roles.
@@ -140,7 +139,7 @@ The Food Waste Reduction Platform (FWRP) aims to minimize food waste by facilita
 4. **Users - Subscriptions**
    - Users subscribe to surplus food alerts.
 
-## Key Aspects
+### Key Aspects
 
 - **Normalization**
   - The model follows normalization principles to minimize data redundancy and ensure data integrity.
