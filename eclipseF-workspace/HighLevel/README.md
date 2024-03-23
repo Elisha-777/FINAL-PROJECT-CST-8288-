@@ -87,7 +87,7 @@ Key classes include:
 - **Inventory Table:** Tracks food items, quantities, and expiration dates.
 
 ### Physical Model
-
+![5](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/6a3b05cb-36b0-4360-9700-9e8e6b036f3b)
 ```sql
 CREATE TABLE Users (
     name VARCHAR(200),
@@ -102,5 +102,5 @@ CREATE TABLE Inventory (
     expirationDate DATE,
     surplusIdentification BOOLEAN
 );
-![5](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/6a3b05cb-36b0-4360-9700-9e8e6b036f3b)
+
 
