@@ -48,7 +48,8 @@ The FWRP utilizes a three-tier architecture, consisting of:
 - **Database Layer:** Manages data storage and retrieval.
 
 ## 6. Business Architecture
-![Alt text](file:///C:/Users/ELISHA%20KALYAN/eclipseF-workspace/HighLevel/2.png "Optional title")
+
+![2](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/4f258830-2d23-4e4e-a279-c855b3bf98e0)
 
 ### Retailer Use Cases
 
