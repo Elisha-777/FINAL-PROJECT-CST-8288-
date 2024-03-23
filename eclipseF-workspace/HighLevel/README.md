@@ -48,7 +48,7 @@ The FWRP utilizes a three-tier architecture, consisting of:
 - **Database Layer:** Manages data storage and retrieval.
 
 ## 6. Business Architecture
-![Alt text](file:///C:/Users/ELISHA%20KALYAN/eclipseF-workspace/HighLevel/2.png "Optional title")
+![Alt text](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/blob/master/2.png?raw=true "Optional title")
 
 ### Retailer Use Cases
 
@@ -66,7 +66,7 @@ The FWRP utilizes a three-tier architecture, consisting of:
 - Update retailer inventory upon purchase.
 
 ## 7. Detailed Design
-![Alt text](file:///C:/Users/ELISHA%20KALYAN/eclipseF-workspace/HighLevel/1.jpg "Optional title")
+![Alt text](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/blob/master/1.jpg?raw=true "Optional title")
 
 Key classes include:
 - **User:** Base class for system users.
@@ -74,7 +74,7 @@ Key classes include:
 - **Charitable Organization:** Claims surplus food items for distribution.
 - **Consumer:** Purchases surplus food items.
 - **InventoryItem, ClaimedItem, PurchaseItem:** Represent various item states in the system.
-![Alt text](file:///C:/Users/ELISHA%20KALYAN/eclipseF-workspace/HighLevel/3.png "Optional title")
+![Alt text](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/blob/master/3.png?raw=true "Optional title")
 
 ## 8. Database
 
@@ -84,6 +84,7 @@ Key classes include:
 - **Inventory Table:** Tracks food items, quantities, and expiration dates.
 
 ### Physical Model
+![Alt text](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/blob/master/5.png?raw=true "Optional title")
 
 ```sql
 CREATE TABLE Users (
@@ -99,4 +100,4 @@ CREATE TABLE Inventory (
     expirationDate DATE,
     surplusIdentification BOOLEAN
 );
-![Alt text](file:///C:/Users/ELISHA%20KALYAN/eclipseF-workspace/HighLevel/5.png "Optional title")
+
