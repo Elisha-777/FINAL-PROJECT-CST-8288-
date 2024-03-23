@@ -82,13 +82,12 @@ Key classes include:
 ## 8. Database
 
 # Food Waste Reduction Platform (FWRP) - Database Structure
-![5](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/1ed5ce61-a27f-4c6e-8538-7c5d00962b8a)
 
 This document outlines the logical data model and ERD (Entity-Relationship Diagram) for the Food Waste Reduction Platform (FWRP), detailing the database's structural organization. It includes entities, attributes, and relationships critical to the system's data requirements.
 
 ## ERD Diagram (Version 1.0)
 
-
+![5](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/1ed5ce61-a27f-4c6e-8538-7c5d00962b8a)
 
 ## Logical Data Model
 
