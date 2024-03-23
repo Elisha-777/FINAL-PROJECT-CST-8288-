@@ -67,7 +67,8 @@ The FWRP utilizes a three-tier architecture, consisting of:
 - Update retailer inventory upon purchase.
 
 ## 7. Detailed Design
-![Alt text](file:///C:/Users/ELISHA%20KALYAN/eclipseF-workspace/HighLevel/1.jpg "Optional title")
+
+![1](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/45d5d96a-573b-4e16-8905-cb89d5f47825)
 
 Key classes include:
 - **User:** Base class for system users.
@@ -75,7 +76,8 @@ Key classes include:
 - **Charitable Organization:** Claims surplus food items for distribution.
 - **Consumer:** Purchases surplus food items.
 - **InventoryItem, ClaimedItem, PurchaseItem:** Represent various item states in the system.
-![Alt text](file:///C:/Users/ELISHA%20KALYAN/eclipseF-workspace/HighLevel/3.png "Optional title")
+
+![3](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/e744204e-28cf-4871-9148-b96fd370de04)
 
 ## 8. Database
 
@@ -100,4 +102,5 @@ CREATE TABLE Inventory (
     expirationDate DATE,
     surplusIdentification BOOLEAN
 );
-![Alt text](file:///C:/Users/ELISHA%20KALYAN/eclipseF-workspace/HighLevel/5.png "Optional title")
+![5](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/6a3b05cb-36b0-4360-9700-9e8e6b036f3b)
+
