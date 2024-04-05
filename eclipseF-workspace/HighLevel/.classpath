@@ -71,11 +71,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/ELISHA KALYAN/OneDrive/Desktop/Documents/apache-tomcat-9.0.86/apache-tomcat-9.0.86/lib/mysql-connector-j-8.1.0.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/ELISHA KALYAN/OneDrive/Desktop/Documents/apache-tomcat-9.0.86/apache-tomcat-9.0.86/lib/servlet-api.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -167,6 +162,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/ELISHA KALYAN/OneDrive/Desktop/Documents/apache-tomcat-9.0.86/apache-tomcat-9.0.86/lib/websocket-api.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/ELISHA KALYAN/Downloads/MySqlJdbcDriver/mysql-connector-j-8.1.0.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

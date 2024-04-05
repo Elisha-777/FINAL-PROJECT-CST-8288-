@@ -9,4 +9,21 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+
+  <!-- Servlet definition -->
+  <servlet>
+    <servlet-name>ExampleServlet</servlet-name>
+    <servlet-class>com.example.ExampleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>default package.MyServlet</servlet-class>
+  </servlet>
+  
+  <!-- Servlet mapping -->
+  <servlet-mapping>
+    <servlet-name>ExampleServlet</servlet-name>
+    <url-pattern>/example</url-pattern>
+  </servlet-mapping>
+
 </web-app>
