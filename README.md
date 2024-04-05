@@ -49,11 +49,7 @@ The FWRP utilizes a three-tier architecture, consisting of:
 
 ## 6. Business Architecture
 
-![Alt text](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/blob/master/2.png?raw=true "Optional title")
-=======
-
 ![2](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/4f258830-2d23-4e4e-a279-c855b3bf98e0)
-
 
 ### Retailer Use Cases
 
@@ -72,11 +68,7 @@ The FWRP utilizes a three-tier architecture, consisting of:
 
 ## 7. Detailed Design
 
-![Alt text](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/blob/master/1.jpg?raw=true "Optional title")
-=======
-
 ![1](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/45d5d96a-573b-4e16-8905-cb89d5f47825)
-
 
 Key classes include:
 - **User:** Base class for system users.
@@ -85,11 +77,7 @@ Key classes include:
 - **Consumer:** Purchases surplus food items.
 - **InventoryItem, ClaimedItem, PurchaseItem:** Represent various item states in the system.
 
-![Alt text](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/blob/master/3.png?raw=true "Optional title" )
-=======
-
 ![3](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/assets/156712128/e744204e-28cf-4871-9148-b96fd370de04)
-
 
 ## 8. Database
 
@@ -161,15 +149,4 @@ This document outlines the logical data model and ERD (Entity-Relationship Diagr
 The logical data model of FWRP facilitates effective data management and system operation, supporting the platform's mission to reduce food waste through improved distribution mechanisms.
 
 
-### Physical Model
-![Alt text](https://github.com/Elisha-777/FINAL-PROJECT-CST-8288-/blob/master/5.png?raw=true "Optional title")
 
-
-
-
-CREATE TABLE Inventory (
-    itemID INT PRIMARY KEY,
-    quantity INT,
-    expirationDate DATE,
-    surplusIdentification BOOLEAN
-);

@@ -1,0 +1,231 @@
+1. Version History
+VERSION	AUTHOR	DATE	DESCRIPTION
+1.0	Elisha Kalyan		
+1.2	Deepanshu.		
+1.3	Armando Mavova Bazeydio		
+1.4	Aaniq Allaudin		
+
+
+
+
+2. Introduction
+About the System:
+The proposed Food Waste Reduction Platform is envisaged as a web-based application designed to significantly mitigate food waste through the facilitation of connections among food retailers, consumers, and charitable organizations. Its core objective is to streamline the redistribution of surplus food, thereby addressing critical issues such as hunger and food sustainability within ecosystems. The platform is to be equipped with various functionalities including, but not limited to, user registration, inventory management, and the listing and claiming of surplus food, all aimed at enhancing the efficiency of food redistribution efforts.
+
+Purpose of the Document:
+This document has been crafted to serve as a detailed plan outlining the envisioned development trajectory of the Food Waste Reduction Platform. It delineates the structure, design considerations, and functional requirements that will underpin the construction of the platform. Targeted towards developers, project managers, and prospective users among other stakeholders, this document aims to provide a clear, comprehensive blueprint for guiding the forthcoming phases of the platform's development, from conceptualization through to implementation.
+
+
+
+3. Targeted Audience
+
+Retailers: Businesses with food inventory, such as grocery stores and supermarkets, seeking efficient ways to manage and reduce surplus food by donating or selling at discounted prices. The platform offers a solution to minimize waste and contribute to community welfare.
+
+Consumers: Individuals looking for opportunities to purchase food at reduced prices or contribute to sustainability efforts by acquiring and utilizing surplus food. This audience benefits from real-time notifications and access to a variety of food items available for purchase.
+
+Charitable Organizations: Non-profit entities, including food banks and shelters, aiming to streamline the process of acquiring donations to assist those in need. The platform provides a direct channel to connect with retailers for claiming surplus food items, enhancing their ability to serve the community.
+
+4. Scope
+In Scope:
+Web-Based Platform Development Plan: Crafting a platform to link food retailers, consumers, and charities for food waste reduction.
+User Registration and Authentication: Developing processes for secure registration and login for various user types.
+Retailer Inventory Management Design: Providing tools for retailers to handle inventory, spot surplus food, and list items for donation or sale.
+Support for Charities and Consumers: Creating features for charities to claim food and for consumers to buy surplus food at discounts.
+Notification System Development: Implementing a system to alert users about surplus food based on their preferences.
+RDBMS Integration: Designing a database system to manage the platform's data efficiently.
+Out of Scope:
+Excluding Real Money Transactions: The platform will simulate purchases but won't handle real financial transactions.
+No External Logistics Integration: The project won't connect with food delivery or logistics services.
+No Real-Time Chat Features: Development will focus on basic notifications, excluding real-time messaging.
+Basic Retailer Inventory Tools Only: The platform will provide essential inventory management features, not comprehensive systems.
+
+5. Application Architecture:
+Overview of the entire System:
+The FWRP aims to address the global issue of food waste by providing a comprehensive solution that connects food retailers, consumers, and charitable organizations. It encourages collaboration among stakeholders across the food supply chain to efficiently redistribute surplus food items and reduce waste.
+Key Features:
+•	User Registration: Users can register on the platform by providing necessary details such as name, email, password, and user type (retailer, consumer, or charitable organization).
+•	Inventory Management: Retailers can manage their inventory, including adding new items, updating quantities, and setting expiration dates.
+•	Surplus Food Identification: Retailers can identify surplus food items nearing expiration or in excess of demand and flag them for donation or sale.
+•	Claiming Food Items: Charitable organizations can claim surplus food items listed by retailers for donation.
+•	Purchasing Food Items: Consumers can purchase surplus food items listed by retailers at discounted rates.
+•	Surplus Food Alerts: Users can subscribe to receive alerts based on their location, communication method, and food preferences, and receive automatic notifications whenever surplus food items are listed on the platform.
+hunger and FWRP serves as a collaborative platform to promote sustainability, reduce hunger, and build more resilient food ecosystems by efficiently redistributing surplus food items and addressing the impact of food waste.
+
+High-Level Overview
+The Food Waste Reduction Platform (FWRP) is designed as a three-tier architecture consisting of a presentation layer, business layer, and database layer.
+
+Presentation Layer:
+•	Responsible for the user interface (UI) and user interactions.
+•	Utilizes the Model-View-Controller (MVC) design pattern to separate concerns.
+•	Interacts with users through web or mobile interfaces.
+Business Layer:
+•	Contains the core functionalities and business logic of the platform.
+•	Handles user requests from the presentation layer and processes them accordingly.
+•	Implements various features such as user registration, inventory management, food item listing, claiming, purchasing, and subscription management.
+Database Layer:
+•	Stores and manages persistent data used by the application.
+•	Utilizes a relational database management system (RDBMS) such as MySQL or PostgreSQL.
+•	Entities include users, inventory items, claimed items, purchased items, subscriptions, etc.
+•	Responsible for maintaining data integrity and consistency.
+
+Components
+Presentation Layer Components:
+•	User Interface (UI): Provides the graphical interface for users to interact with the platform.
+•	Controllers: Handle user requests and delegate actions to the appropriate business logic components.
+•	Views: Render the UI elements and display data to users.
+Business Layer Components:
+•	Controllers/Handlers: Receive and process incoming requests from the presentation layer.
+•	Services: Implement business logic and orchestrate interactions between different components.
+•	Data Access Objects (DAOs): Interact with the database layer to perform CRUD (Create, Read, Update, Delete) operations on entities.
+Database Layer Components:
+•	Database Management System (DBMS): Manages the storage and retrieval of data.
+•	Tables/Entities: Represent the various data entities and their relationships.
+•	Queries: SQL queries for data manipulation and retrieval.
+
+
+6. Business Architecture:
+ 
+Retailer Use Cases:
+•	Manage Inventory:
+Description: Retailers can add, update, and remove items from their inventory.
+Actors: Retailer
+Actions: Add Item, Update Item, Remove Item
+
+•	Identify Surplus Food:
+Description: Retailers can identify and flag surplus food items nearing expiration or more than demand.
+Actors: Retailer
+Actions: Flag Surplus Food
+
+•	List Surplus Food Items:
+Description: Retailers can list surplus food items on the platform for donation or sale.
+Actors: Retailer
+Actions: List Item for Donation, List Item for Sale
+
+Charitable Organization Use Cases:
+•	Claim Food Items:
+Description: Charitable organizations can claim surplus food items listed by retailers for donation.
+Actors: Charitable Organization
+Actions: Claim Food Item
+•	Update Inventory:
+Description: Retailer inventory is updated once a food item is claimed by a charitable organization.
+Actors: Charitable Organization, Retailer
+Actions: Update Retailer Inventory
+
+Consumer Use Cases:
+•	Purchase Food Items:
+Description: Consumers can purchase surplus food items listed by retailers at discounted rates.
+Actors: Consumer
+Actions: Purchase Item
+
+•	Update Inventory:
+Description: Retailer inventory is updated once a food item is purchased by a consumer.
+Actors: Retailer, Consumer
+Actions: Update Retailer Inventory
+
+General User Cases:
+•	User Registration:
+Description: Users can register on the platform by providing necessary details.
+Actors: User
+Actions: Register
+
+•	User Authentication:
+Description: Users can log in and log out of the platform.
+Actors: User
+Actions: Login, Logout
+
+•	Subscribe to Surplus Food Alerts:
+Description: Users can subscribe to receive surplus food alerts based on location, communication method, and food preferences.
+Actors: User
+Actions: Subscribe to Alerts
+
+•	Receive Automatic Notifications:
+Description: Users subscribed to alerts receive automatic notifications whenever retailers list surplus food items on the platform.
+Actors: User
+Actions: Receive Notifications
+
+
+7. Detailed Design: 
+ 
+In this part we as a group identified important classes that we will be needed to carry out throughout the project based on instructions that were provided in the pdf. Classes are as follows:
+•	User
+•	Consumer
+•	Retailer 
+•	Charitable Organization 
+•	Inventory Items
+•	Purchase Items
+•	Claimed Items
+
+User Class:
+A user represents an entity within the system. It possesses several attributes, including a unique identifier (userID), name, email address (email), password, and userType, which specifies whether the user is a Retailer, Consumer, or CharitableOrganization. The user can undertake various methods such as registering on the platform, logging in, logging out, subscribing to surplus food alerts, and receiving automatic notifications. These functionalities enable users to interact with the system according to their roles and requirements.
+
+
+Retailer Class:
+A retailer user represents a business entity within the system. It maintains an inventory, consisting of InventoryItem objects. The retailer can manage its inventory by adding, updating, or removing items using the manageInventory method. Additionally, it can identify surplus food items nearing expiration or exceeding demand and list them on the platform for donation or sale. These functionalities empower retailers to efficiently manage their inventory and contribute to reducing food wastage.
+
+CharitableOrganization:
+A charitable organization user represents a non-profit entity within the system. It maintains a list of claimed items (claimedItems), which are represented by ClaimedItem objects. The organization can claim surplus food items listed by retailers for donation and update the retailer's inventory accordingly. This functionality allows charitable organizations to acquire surplus food items efficiently for redistribution to those in need, thereby promoting food security and reducing wastage.
+
+Consumer:
+A consumer user represents an individual within the system. It maintains a list of purchased items (purchasedItems), represented by PurchaseItem objects. Consumers can purchase surplus food items listed by retailers, facilitating the redistribution of surplus food while providing consumers with access to affordable food options. The updateInventory method ensures that the retailer's inventory is adjusted accordingly upon a consumer's purchase, maintaining inventory accuracy and availability.
+
+InventoryItem:
+An InventoryItem represents an item within a retailer's inventory. It possesses attributes such as a unique identifier (itemID), name, quantity, expiry date (expiryDate), and a Boolean flag indicating whether the item is surplus (isSurplus). These attributes enable the system to track and manage inventory items effectively, including identifying surplus items and managing their redistribution or sale.
+
+ClaimedItem:
+A ClaimedItem represents a food item claimed by a charitable organization. It includes a unique identifier (claimID) and a reference to the InventoryItem object representing the claimed food item. This association allows the system to track the redistribution of surplus food items from retailers to charitable organizations, ensuring transparency and accountability in the donation process.
+PurchaseItem:
+A PurchaseItem represents a food item purchased by a consumer. It includes a unique identifier (purchaseID) and a reference to the InventoryItem object representing the purchased food item. This association enables the system to track consumer transactions, including the purchase of surplus food items from retailers, facilitating inventory management and financial transactions within the system.
+
+Project Process Diagram  (Component Diagram):
+ 
+
+
+Presentation Component:
+In the project flow, the Presentation component acts as the initial point of interaction for users. When a user engages with the system, they interact with the user interface elements provided by the Presentation component. This includes elements such as forms, buttons, menus, and other visual components that users use to input data or trigger actions.
+
+
+
+
+Business Component:
+Once the user interacts with the user interface, the Business component comes into play. This component houses the business logic and functionalities of the system. When a user performs an action through the user interface, such as submitting a form or clicking a button, controllers or handlers within the Business component process these requests. These controllers or handlers contain the logic necessary to carry out the requested operations, such as validating user input, executing business rules, and orchestrating interactions with other system components.
+
+Database Component:
+After the business logic has been executed successfully, the result or outcome of the operation needs to be stored or managed persistently. This is where the Database component comes in. The Database component is responsible for storing and managing the persistent data used by the application. Once the Business component completes its operations, it interacts with the Database component to store or retrieve relevant data. This involves using data access objects (DAOs) to communicate with the database management system (DBMS), executing queries to insert, update, delete, or retrieve data from the database tables or entities.
+
+In summary, the flow of the project starts with user interaction with the user interface elements provided by the Presentation component. The user's actions trigger the execution of business logic and functionalities within the Business component. Once the business logic is executed successfully, the resulting data is stored or managed in the Database component for future retrieval or reference. This flow represents the lifecycle of user interactions and data processing within the system, from user input to data storage.
+
+8. Database
+ERD DIAGRAM(Version 1.0)
+
+
+ 
+
+
+
+LOGICAL DATA MODEL
+
+The logical data model for the Food Waste Reduction Platform (FWRP) represents the structural organization of the database, capturing entities, attributes, and relationships essential for the system's data requirements.
+
+Entities and Attributes
+1. Users: Represents individuals interacting with the platform. Includes attributes such as user ID, name, email, password, and user type (retailer, consumer, or charitable organization).
+2. Retailers: Represents businesses or entities managing inventory. Holds a foreign key reference to the Users table.
+3. Surplus Food: Represents food items listed by retailers as surplus. Includes attributes such as surplus ID, retailer ID, item name, quantity, expiration date, and donation/sale status.
+4. Consumers: Represents individuals browsing and purchasing items. Contains a foreign key reference to the Users table.
+5. Charitable Organizations: Represents organizations claiming surplus food items. Also references the Users table.
+6. Inventory: Stores detailed information about inventory managed by retailers, including item ID, retailer ID, item name, quantity, and expiration date.
+7. Subscriptions: Represents user subscriptions for surplus food alerts, including subscription ID, user ID, location, communication method, and food preferences.
+
+Relationships
+1. Users - Retailers, Consumers, Charitable Organizations: One-to-many relationship between users and their respective roles as retailers, consumers, or charitable organizations.
+2. Retailers - Surplus Food, Inventory: Retailers manage surplus food items and inventory, establishing one-to-many relationships.
+3. Charitable Organizations - Surplus Food: Charitable organizations claim surplus food items, establishing a one-to-many relationship.
+4. Users - Subscriptions: Users subscribe to surplus food alerts, forming a one-to-many relationship.
+
+Key Aspects
+Normalization: The logical data model follows normalization principles to reduce data redundancy and maintain data integrity. Entities are organized into separate tables to minimize duplication.
+Referential Integrity: Foreign key constraints ensure referential integrity between related entities, preventing orphaned records and maintaining data consistency.
+  
+Overall, the logical data model provides a clear representation of the FWRP database structure, facilitating effective data management and system operation.
+
+
+
